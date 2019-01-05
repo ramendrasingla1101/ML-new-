@@ -27,7 +27,7 @@ while True:
 
 	faces = sorted(faces, key = lambda x : x[2]*x[3] , reverse = True)
 
-	skip += 1
+	
 
 	for face in faces[:1]:
 		x,y,w,h = face
@@ -45,6 +45,7 @@ while True:
 		k += 1
 		
 		cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
+		skip += 1
 
 	cv2.imshow("faces",frame)
 

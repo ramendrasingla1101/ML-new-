@@ -8,7 +8,7 @@ while True:
 	ret,frame = cap.read()
 
 	gray_frame = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-
+	cv2.imshow("gray",gray_frame)
 	if ret == False:
 		continue
 
